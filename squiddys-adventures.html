@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squiddy's Adventures - WilCoDie Wiki</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00b4d8;
+            --secondary: #ffb703;
+            --dark: #1d3557;
+            --light: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        /* Header / Navbar */
+        header {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), #90e0ef);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--dark);
+        }
+
+        /* Episodes Grid */
+        .episodes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .episode-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+
+        .episode-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .episode-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0fbfc;
+            color: var(--dark);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+            margin-bottom: 0.4rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <a href="#" class="logo">🦑 WilCoDie Wiki</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#episodes">Episodes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Squiddy's Adventures</h1>
+        <h2>Created by Jude Gehrke (2019 – 2025)</h2>
+        <p>A web-series on YouTube about a squid-like octopus named Squiddy, going on random adventures seeing the greatest parts of the world and trying to solve every problem!</p>
+    </section>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Show</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555;">
+                Welcome to the WilCoDie Wiki archive for <em>Squiddy's Adventures</em>. Spanning Episodes 1 through 5 (with the Finale coming soon!), the series follows Squiddy alongside a rotating cast of characters through snack reviews, wild holiday specials, and intense parodies.
+            </p>
+        </section>
+
+        <!-- Episodes Section -->
+        <section id="episodes">
+            <h2>Episodes Guide</h2>
+            <div class="episodes-grid">
+                <div class="episode-card">
+                    <span class="badge">Unavailable / Deleted</span>
+                    <h3>Episode 1</h3>
+                    <p><strong>Focus:</strong> Squiddy explores Jude's Old House ("the town") and ranks snacks like Takis and popcorn.</p>
+                </div>
+                <div class="episode-card">
+                    <span class="badge">Unavailable / Deleted</span>
+                    <h3>Episode 2</h3>
+                    <p><strong>Focus:</strong> Similar format to Episode 1 featuring different food items.</p>
+                </div>
+                <div class="episode-card">
+                    <span class="badge">Prime Era</span>
+                    <h3>Episode 3</h3>
+                    <p><strong>Cast:</strong> Jude Gehrke, Braiden Struck, and Mason "WilRhy".</p>
+                    <p><strong>Details:</strong> Features mature jokes, Russian Elmo, Lenny, Big Green Predator (Gus), and variants like Angry & Football Player Squiddy.</p>
+                </div>
+                <div class="episode-card">
+                    <span class="badge">Unlisted on Mason's Channel</span>
+                    <h3>Episode 4 (Christmas Special)</h3>
+                    <p><strong>Cast:</strong> Jude Gehrke, Mason "WilRhy", and Atlas (Jude's Dog).</p>
+                    <p><strong>Details:</strong> Dr. Seuss' How The Grinch Stole Christmas parody featuring a Grinch puppet.</p>
+                </div>
+                <div class="episode-card">
+                    <span class="badge">Latest Release</span>
+                    <h3>Episode 5</h3>
+                    <p><strong>Cast:</strong> Jude Gehrke & Mason "WilRhy".</p>
+                    <p><strong>Details:</strong> Netflix's Squid Game parody featuring Korean games (Red Light, Green Light, Glass Bridge) and characters like Professor Cool Guy, Buzz Lightyear, and Bowser Jr.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WilCoDie Co., Inc. All rights reserved.</p>
+        <p class="disclaimer">Note: WilCoDie Co., Inc. is not a registered business.</p>
+    </footer>
+
+</body>
+</html>
